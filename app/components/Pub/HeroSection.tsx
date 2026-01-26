@@ -66,7 +66,7 @@ const HeroSection = () => {
                     </div>
                     <div className="space-y-4 pt-16">
                         <div className="h-1/3 bg-white p-8 flex flex-col justify-center border-r-8 border-red-600">
-                            <p className="text-neutral-900 font-black text-5xl tracking-tighter italic">500+</p>
+                            <p className="text-neutral-900 font-black text-5xl tracking-tighter italic">150+</p>
                             <p className="text-neutral-500 font-bold text-[10px] uppercase tracking-widest">Projets Livrés</p>
                         </div>
                         <div className="h-2/3 relative group overflow-hidden border-2 border-white/10">
