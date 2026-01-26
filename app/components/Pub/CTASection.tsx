@@ -162,7 +162,7 @@ const Services = () => {
 export default function ConstructionApp() {
   return (
     <main className="min-h-screen bg-white">
-      <Header />
+      
 
       <Services />
     </main>
