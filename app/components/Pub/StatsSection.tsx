@@ -78,7 +78,7 @@ const StatsSection = () => (
             <div className="mt-12 flex justify-center items-center gap-4 text-gray-400">
                 <HardHat size={16} />
                 <span className="text-[10px] font-black uppercase tracking-[0.3em]">
-                    Données auditées pour le stage de 5ème année - EMSI
+            
                 </span>
             </div>
         </div>
