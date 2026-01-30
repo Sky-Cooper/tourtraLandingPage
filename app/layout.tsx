@@ -11,10 +11,10 @@ const siteUrl = 'https://www.tourtra.ma';
 
 export const metadata: Metadata = {
   title: {
-    default: "Tourtora - Entreprise de Construction & BTP au Maroc",
-    template: "%s | Tourtora Construction"
+    default: "Tourtra - Entreprise de Construction & BTP au Maroc",
+    template: "%s | Tourtra Construction"
   },
-  description: "Tourtora est votre partenaire de confiance pour le BTP au Maroc. Étude de projet, gros œuvre, et finitions de haute qualité pour bâtiments résidentiels et industriels.",
+  description: "Tourtra est votre partenaire de confiance pour le BTP au Maroc. Étude de projet, gros œuvre, et finitions de haute qualité pour bâtiments résidentiels et industriels.",
   
   metadataBase: new URL(siteUrl),
   alternates: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "BTP Casablanca", 
     "gros oeuvre Maroc", 
     "rénovation bâtiment Rabat", 
-    "Tourtora BTP", 
+    "Tourtra BTP", 
     "devis construction Maroc", 
     "génie civil Maroc",
     "construction industrielle"
@@ -48,16 +48,16 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Tourtora - L'excellence dans la construction au Maroc",
+    title: "Tourtra - L'excellence dans la construction au Maroc",
     description: "Expertise technique et rigueur pour tous vos projets de construction, du terrassement à la remise des clés.",
     url: siteUrl,
-    siteName: 'Tourtora',
+    siteName: 'Tourtra',
     images: [
       {
-        url: '/og-image-construction.png', // Make sure this image showcases a construction site
+        url: '/og-image-construction.png', 
         width: 1200,
         height: 630,
-        alt: 'Tourtora - Réalisations BTP et Construction au Maroc',
+        alt: 'Tourtra - Réalisations BTP et Construction au Maroc',
       },
     ],
     locale: 'fr_MA',
@@ -66,14 +66,20 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: "Tourtora Construction & BTP Maroc",
+    title: "Tourtra Construction & BTP Maroc",
     description: "Réalisez vos projets de construction avec une expertise professionnelle et des délais respectés.",
     images: [`${siteUrl}/og-image-construction.png`],
   },
 
+  // --- CONFIGURATION DE L'ICÔNE CORRIGÉE ---
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/icon.png',
+    shortcut: '/icon.png',
+    apple: '/icon.png',
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: '/icon.png',
+    },
   },
 };
 
@@ -86,14 +92,14 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
-    "name": "Tourtora",
+    "name": "Tourtra",
     "url": siteUrl,
-    "logo": `${siteUrl}/logo.png`,
+    "logo": `${siteUrl}/icon.png`,
     "image": `${siteUrl}/hero-construction.jpg`,
     "description": "Entreprise spécialisée dans le bâtiment et les travaux publics (BTP) au Maroc.",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Casablanca", // Adjust if your HQ is elsewhere
+      "addressLocality": "Casablanca",
       "addressCountry": "MA"
     },
     "geo": {
